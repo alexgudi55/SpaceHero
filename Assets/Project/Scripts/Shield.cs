@@ -8,9 +8,6 @@ public class Shield : MonoBehaviour
     [SerializeField] int curHealth;
     [SerializeField] int regenerationAmount = 1; // 1 every 2 seconds
     [SerializeField] float regenerationRate = 20f;
-
-    [SerializeField] ShieldUI leftShieldUI;
-    [SerializeField] ShieldUI rightShieldUI;
     
     RectTransform bar;
     RectTransform bar2;
@@ -65,8 +62,8 @@ public class Shield : MonoBehaviour
 
     void UpdateShieldBar()
     {   
-        bar.sizeDelta = new Vector2((curHealth / (float) initialHealth) * 250, 10f);   
-        bar2.sizeDelta = new Vector2((curHealth / (float) initialHealth) * 250, 10f);   
+        bar.sizeDelta = new Vector2((curHealth / (float) initialHealth) * 200, 30f);   
+        bar2.sizeDelta = new Vector2((curHealth / (float) initialHealth) * 200, 30f);   
              
     }
 }

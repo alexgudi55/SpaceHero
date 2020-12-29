@@ -10,6 +10,10 @@ public class MenuScript : MonoBehaviour
     [SerializeField]Text highScoreText;
     [SerializeField]Button right;
     [SerializeField]Button left;
+    [SerializeField]Canvas main;
+    [SerializeField]Canvas instructions;
+    
+    
     
     StrabismusData data;
     void Start()
@@ -44,6 +48,24 @@ public class MenuScript : MonoBehaviour
         right.interactable = true;
         left.interactable = false;
     }
+
+    public void ShowInstructions()
+    {   
+        main.enabled = false;
+        instructions.enabled = true;
+        GameObject.Find("Pickup").transform.position = new Vector3(-12.8f,14.4f,69.3f);
+        GameObject.Find("Enemy").transform.position = new  Vector3(16.3f,3.4f,49.6f);
+    }
+
+    public void ShowMainMenu()
+    {
+        main.enabled = true;
+        instructions.enabled = false;
+        GameObject.Find("Pickup").transform.position = new Vector3(-1112.8f,14.4f,69.3f);
+        GameObject.Find("Enemy").transform.position = new  Vector3(-1116.3f,3.4f,49.6f);
+    }
+
+    
 
      void LoadHighScore()
     {

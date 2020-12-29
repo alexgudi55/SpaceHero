@@ -33,9 +33,18 @@ public class SelectOption : MonoBehaviour
                 {
                     option.Left();
                 }
-                else
+                else if((raycast.transform.name == "RightEye"))
                 {
                     option.Right();
+                }
+                else if((raycast.transform.name == "Instrucciones"))
+                {
+                    Debug.Log("Doing it");
+                    option.ShowInstructions();
+                }
+                else if((raycast.transform.name == "Return")) //Return button
+                {
+                    option.ShowMainMenu();
                 }
             }
             else

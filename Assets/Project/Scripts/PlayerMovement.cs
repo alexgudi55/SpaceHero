@@ -10,6 +10,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] GameObject deadCamera;
 
     [SerializeField] GameObject cam;
+
+    [SerializeField] RectTransform canvasL;
+    [SerializeField] RectTransform canvasR;
+    
     // Update is called once per frame
     void Update()
     {
@@ -25,8 +29,10 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.position += cam.transform.forward * movementSpeed * Time.deltaTime * Input.GetAxis("Vertical");
         }*/
-
+        
         transform.position += cam.transform.forward * movementSpeed * Time.deltaTime;
+        canvasL.transform.position = new Vector3(transform.position.x,  transform.position.y, transform.position.z + 1);
+        canvasR.transform.position = new Vector3(transform.position.x,  transform.position.y, transform.position.z + 1);
     }
 
     void Shoot()

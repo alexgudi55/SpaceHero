@@ -166,13 +166,25 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 65
       Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 96
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
@@ -187,6 +199,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11940}
     - Class: 114
+      Script: {instanceID: 11944}
+    - Class: 114
       Script: {instanceID: 12158}
     - Class: 114
       Script: {instanceID: 12174}
@@ -197,16 +211,30 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12876}
     - Class: 114
+      Script: {instanceID: 12900}
+    - Class: 114
+      Script: {instanceID: 12912}
+    - Class: 114
       Script: {instanceID: 12994}
+    - Class: 114
+      Script: {instanceID: 13072}
     - Class: 114
       Script: {instanceID: 13256}
     - Class: 115
       Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
     - Class: 128
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -549,7 +577,7 @@ ScriptsOnlyBuild:
     className: CameraSettings
   - hash:
       serializedVersion: 2
-      Hash: ae1325fa1308bf16098af8c6b2133031
+      Hash: f86b37b392d2084d3eaf3fcc487f1d85
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerMovement
@@ -627,7 +655,7 @@ ScriptsOnlyBuild:
     className: Asteroid
   - hash:
       serializedVersion: 2
-      Hash: a4c28d36a723f318cb54bd12c2e60a09
+      Hash: 6ca6e9a7c9f8ff17c14f7318e70c9a12
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MenuScript
@@ -735,7 +763,7 @@ ScriptsOnlyBuild:
     className: TMP_ColorGradient
   - hash:
       serializedVersion: 2
-      Hash: f1b56a4e8621ff7c927f5198eb31f272
+      Hash: 3b36d559b2654bea3923cc4cb31f2a77
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Shield
