@@ -2109,6 +2109,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 168360112476900629, guid: 4fe33acffa9511c4d9904c2cc6db0047,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 168360112476900630, guid: 4fe33acffa9511c4d9904c2cc6db0047,
         type: 3}
       propertyPath: m_Enabled
@@ -2178,9 +2183,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 168360112334212438}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3996c8b1752164c9eeb8dbe6dab1de, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cb186ba5f4c72e4dabc052147e1042a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idPaciente: 
+  idEspecialista: 
 --- !u!114 &168360112334212441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2190,9 +2197,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 168360112334212439}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e3996c8b1752164c9eeb8dbe6dab1de, type: 3}
+  m_Script: {fileID: 11500000, guid: 2cb186ba5f4c72e4dabc052147e1042a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idPaciente: 
+  idEspecialista: 
 --- !u!1001 &5075915722967793447
 PrefabInstance:
   m_ObjectHideFlags: 0
