@@ -10,6 +10,8 @@ public class Score : MonoBehaviour
     ///[SerializeField]Text highScMain;
     
     [SerializeField]Text curScore;
+
+    Timer time;
     int score;
     int highScore;
 
@@ -20,6 +22,7 @@ public class Score : MonoBehaviour
 
         LoadHighScore();
         //DisplayScoreMainMenu();
+        time = GameObject.Find("CanvasR").GetComponent<Timer>();
     }
 
 
@@ -53,7 +56,12 @@ public class Score : MonoBehaviour
             highScore = score; 
         }
         DisplayScore();
-        //DisplayScoreMainMenu();
+
+        string puntaje = score.ToString();
+        string tiempo = time.timerText.text;
+        Debug.Log(puntaje + " <--- Score LOL");
+        Debug.Log(tiempo + " <---- Time LOL");
+
     }
 
     void AddScore(int amt)
@@ -72,6 +80,4 @@ public class Score : MonoBehaviour
     {
        // highScMain.text = "High: " + highScore.ToString();
     }
-
-    
 }
