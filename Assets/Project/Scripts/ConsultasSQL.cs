@@ -16,7 +16,7 @@ public class ConsultasSQL
         MySqlConnection conn = conexion.getConnection();
         try
         {
-           string sql = "SELECT desviacion_izq, desviacion_der, idPaciente, idEspecialista  FROM ojo o, api a WHERE o.Paciente_idPaciente = a.idPaciente";
+           string sql = "SELECT desviacion_izq, desviacion_der, idPaciente, idEspecialista  FROM prediagnostico pre, api a WHERE pre.Paciente_idPaciente = a.idPaciente";
 
            MySqlCommand cmd = new MySqlCommand(sql, conn);
            MySqlDataReader rdr = cmd.ExecuteReader();
