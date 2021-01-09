@@ -65,7 +65,7 @@ public class Score : MonoBehaviour
         CameraSettingsBD camera = GameObject.Find("LeftCamera").GetComponent<CameraSettingsBD>();
         string paciente = camera.idPaciente;
         string especialista = camera.idEspecialista;
-        sql.insertTratamiento("Oclución de objetos",puntaje,tiempo,paciente,especialista);
+        sql.insertTratamiento("Oclusión de objetos",puntaje,tiempo,paciente,especialista);
         Debug.Log(puntaje + " <--- Score LOL");
         Debug.Log(tiempo + " <---- Time LOL");
     }
