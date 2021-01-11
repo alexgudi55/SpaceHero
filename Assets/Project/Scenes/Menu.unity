@@ -1086,6 +1086,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 359.8
       objectReference: {fileID: 0}
+    - target: {fileID: 8802529359561340077, guid: 5706132f76508d94189ea80881028394,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 160.38
+      objectReference: {fileID: 0}
     - target: {fileID: 8802529359561340078, guid: 5706132f76508d94189ea80881028394,
         type: 3}
       propertyPath: m_Text
@@ -1156,6 +1161,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.8633514
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802529361180008252, guid: 5706132f76508d94189ea80881028394,
+        type: 3}
+      propertyPath: m_Color.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8802529361180008258, guid: 5706132f76508d94189ea80881028394,
         type: 3}
@@ -1340,7 +1350,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770326356}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 848610045}
@@ -1685,8 +1695,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Lanza rayos l\xE1ser  presionando \"X\" para acabar con las naves enemigas.
-    Puedes recolectar los artefactos dispar\xE1ndoles o toc\xE1ndolos. Tienes 2 minutos.\n\xA1Mucha
-    suerte!  "
+    Puedes recolectar los artefactos dispar\xE1ndoles o toc\xE1ndolos. \nTienes 2
+    minutos.\n"
 --- !u!222 &1312000402
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1840,7 +1850,7 @@ Canvas:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1461891488}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
   m_Camera: {fileID: 848610045}
