@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Score : MonoBehaviour
@@ -59,9 +60,14 @@ public class Score : MonoBehaviour
 
         string puntaje = score.ToString();
         string tiempo = time.timerText.text;
+
+        ConsultasSQL sql = new ConsultasSQL(); 
+        CameraSettingsBD camera = GameObject.Find("LeftCamera").GetComponent<CameraSettingsBD>();
+        string paciente = camera.idPaciente;
+        string especialista = camera.idEspecialista;
+        sql.insertTratamiento("Oclusión de objetos",puntaje,tiempo,paciente,especialista);
         Debug.Log(puntaje + " <--- Score LOL");
         Debug.Log(tiempo + " <---- Time LOL");
-
     }
 
     void AddScore(int amt)

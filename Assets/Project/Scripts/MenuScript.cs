@@ -70,6 +70,6 @@ public class MenuScript : MonoBehaviour
      void LoadHighScore()
     {
         highScore = PlayerPrefs.GetInt("HighScore", 0);
-        highScoreText.text = "High: "+ highScore;
+        highScoreText.text = "High Score: "+ highScore;
     }
 }
